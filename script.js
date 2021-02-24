@@ -80,12 +80,25 @@ window.addEventListener('mousemove', function(){
     branchOut();
 });
 
+window.addEventListener('touchmove', function(){
+    
+    branchOut();
+});
+
 window.addEventListener('mousedown', function(){
     drawing = true;
 });
 
 window.addEventListener('mouseup', function(){
     drawing = false;
+});
+
+window.addEventListener('touchstart', function(){
+    drawing = true;
+});
+
+window.addEventListener('touchend', function(){
+    drawing = true;
 });
 
 
